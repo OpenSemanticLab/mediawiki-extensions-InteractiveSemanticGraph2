@@ -1,0 +1,69 @@
+{
+	"name": "InteractiveSemanticGraph2",
+	"version": "0.1.0",
+	"author": [
+		"Simon Stier"
+	],
+	"url": "https://github.com/OpenSemanticLab/mediawiki-extensions-InteractiveSemanticGraph2",
+	"descriptionmsg": "isg2-desc",
+	"license-name": "AGPL v3",
+	"type": "semantic",
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+        "extensions": {
+			"MwJson": ">= 0.11.0"
+		}
+	},
+	"AutoloadClasses": {
+		"InteractiveSemanticGraph2Hooks": "InteractiveSemanticGraph2.hooks.php",
+		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+	},
+	"config": {
+		"InteractiveSemanticGraph2EnableFoo": {
+			"value": true
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"InteractiveSemanticGraph2Alias": "InteractiveSemanticGraph2.i18n.alias.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"InteractiveSemanticGraph2Hooks::onParserFirstCallInit"
+		],
+		"BeforePageDisplay": [
+			"InteractiveSemanticGraph2Hooks::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"InteractiveSemanticGraph2": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.isg2.graph": {
+			"scripts": [
+				"modules/ext.isg.umd.js"
+			],
+			"messages": [],
+			"dependencies": []
+		},
+		"ext.isg2": {
+			"scripts": [
+				"modules/ext.isg2.js"
+			],
+			"styles": [
+				"modules/ext.isg2.foo.css"
+			],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "InteractiveSemanticGraph2"
+	},
+	"SpecialPages": {
+		"HelloWorld": "SpecialHelloWorld"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+		]
+	},
+	"isg2-desc": "{{desc|name=InteractiveSemanticGraph2|url=https://github.com/OpenSemanticLab/mediawiki-extensions-InteractiveSemanticGraph2 }}",
+	"isg2-i18n-welcome": "Used to greet the user when reading the i18n/??.json file.",
+	"isg2-helloworld": "Page title of the HelloWorld special page.\n{{Identical|Hello World}}",
+	"isg2-helloworld-intro": "Text displayed on the HelloWorld SpecialPage.",
+	"helloworld": "Text of the link to the HelloWorld special page on SpecialPages.\n{{Identical|Hello World}}"
+}

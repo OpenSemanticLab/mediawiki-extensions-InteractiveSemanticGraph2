@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"isg2-desc": "Provides a viewer and editor for JSON-Schema and JSON-LD based data",
+	"isg2-i18n-welcome": "Welcome to the localization file of the InteractiveSemanticGraph2 extension.",
+	"isg2-helloworld": "Hello world!",
+	"isg2-helloworld-intro": "Welcome to the \"Hello world\" special page of the InteractiveSemanticGraph2 extension.",
+	"helloworld": "Hello world"
+}
