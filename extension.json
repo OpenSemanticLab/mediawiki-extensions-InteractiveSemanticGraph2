@@ -6,7 +6,7 @@
 	],
 	"url": "https://github.com/OpenSemanticLab/mediawiki-extensions-InteractiveSemanticGraph2",
 	"descriptionmsg": "isg2-desc",
-	"license-name": "AGPL v3",
+	"license-name": "Apache-2.0",
 	"type": "semantic",
 	"manifest_version": 2,
 	"requires": {
